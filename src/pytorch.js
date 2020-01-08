@@ -2475,6 +2475,7 @@ pytorch.ZipContainer = class {
 
     constructor(identifier, entries) {
         this._identifier = identifier;
+        this._entries = null;
 
         if (entries && entries.length > 0) {
             const versionEntry = entries.find((entry) => entry.name == 'version' || entry.name.endsWith('/version'));
